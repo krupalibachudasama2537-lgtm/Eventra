@@ -31,3 +31,7 @@ jobs:
                 # Auto resolve by keeping current branch version
                 git checkout --ours "$file"
                 git add "$file"
+              done
+              git commit -m "Auto-resolved merge conflicts"
+              git push
+            fi
